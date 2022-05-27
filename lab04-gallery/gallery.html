@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .overlay {
+            display: none;
+        }
+        .thumbnail:hover .overlay{
+            display: block;
+        }
+        .thumbnail {
+            position: relative;
+        }
+        .thumbnail .overlay {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            color: white;
+            background-color: rgba(0,0,0,0.5)
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Places to Visit</h1>
+        <div class="thumbnail-container">
+            <div class="thumbnail">
+                <img src="images/joshua-tree.jpeg" alt="Joshua Tree" />
+                <div class="overlay">
+                    <h2>Joshua Tree</h2>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <img src="images/death-valley.jpeg" alt="Death Valley" />
+                <div class="overlay">
+                    <h2>Death Valley</h2>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <img src="images/yosemite.jpeg" alt="Yosemite" />
+                <div class="overlay">
+                    <h2>Yosemite</h2>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <img src="images/zion.jpeg" alt="Zion" />
+                <div class="overlay">
+                    <h2>Zion</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-img-container">
+            <img id="main-img" src="images/joshua-tree.jpeg" alt="Joshua Tree" />
+            <p id="caption">Joshua Tree</p>
+        </div>
+    </div>
+
+    <script>
+        let thumbnails = document.querySelectorAll(".thumbnail");
+        for(let i=0; i<thumbnails.length; i++){
+            thumbnails[i].onclick = function() {
+                document.querySelector("#main-img").src = thumbnails[i].children[0].src;
+                document.querySelector("#main-img").alt = thumbnails[i].children[0].alt;
+                document.querySelector("#caption").innerHTML = thumbnails[i].children[0].alt;
+            }
+        }
+	</script>
+</body>
+</html>

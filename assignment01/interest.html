@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCIS</title>
+    <!-- Google fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Rock+Salt&family=Russo+One&display=swap" rel="stylesheet">
+    <!-- Internal stylesheet -->
+    <style>
+        body {
+            background-color: rgb(33, 80, 71);
+        }
+        #header {
+            text-align: center;
+        }
+        #first {
+            /* div */
+            background-color: rgb(236, 248, 245);
+            width: 800px;
+            /* Inside div */
+            padding: 30px;
+            /* Border */
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            /* Outside div */
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px; 
+        }
+        #second {
+            /* div */
+            background-color: rgb(236, 248, 245);
+            width: 800px;
+            /* Inside div */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            /* Border */
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            /* Outside div */
+            padding: 30px;
+        }
+        table {
+            /* Table */
+            font-family: 'Didact Gothic', sans-serif;
+            width: 500px;
+            height: 300px;
+            /* Connect cells */
+            border-collapse: collapse;
+            /* ? */
+            margin: auto;
+        }
+        td, th {
+            /* Border */
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+            /* Outside cell */
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+        th {
+            background-color: rgb(239, 192, 107);
+        }
+        img {
+            /* Image */
+            max-width: 100%;
+            max-height: 100%;
+            /* Border */
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+            /* Inside image */
+            margin-left: 100px;
+        }
+        h1{
+            /* div */
+            font-family: 'Russo One', sans-serif;
+            color: white;
+            font-size: 70px;
+            /* Inside div */
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-family: 'Didact Gothic', sans-serif;
+        }
+        h2 {
+            font-family: 'Rock Salt', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>NCIS</h1>
+    </div>
+    <div id="first">
+        <h2>About NCIS</h2>
+        <img id="top-img" src="images/ncis.jpeg" alt="Picture of NCIS TV Show"/>
+        <p>
+            NCIS (Naval Criminal Investigative Service) is more than just an action drama. With liberal doses of humor, it’s a show that focuses on the sometimes complex and always amusing dynamics of a team forced to work together in high-stress situations. NCIS Special Agent Leroy Jethro Gibbs, a former Marine gunnery sergeant whose skills as an investigator are unmatched, leads this troupe of colorful personalities. Gibbs, a man of few words, only needs a look to explain it all. The team includes NCIS Special Agent Timothy McGee, an MIT graduate with a brilliance for computers; NCIS Special Agent Eleanor "Ellie" Bishop, a mysterious mixture of analytic brilliance, fierce determination and idealism who specializes in international threat assessment and global preparation; the charismatic, unpredictable and resilient NCIS Special Agent Nicholas "Nick" Torres, who has spent most of his career on solo undercover assignments; and NCIS Special Agent Jacqueline "Jack" Sloane, who built her reputation as the agency’s premier forensic psychologist and enjoys challenging Gibbs. 
+        </p>
+        <p>
+            Assisting the team as the NCIS Historian is retired medical examiner Dr. Donald "Ducky" Mallard, who knows it all because he’s seen it all; Ducky’s protégé, the naïve Jimmy Palmer, who graduated from assistant to fully licensed medical examiner and now runs the morgue and Forensic Scientist Kasie Hines, Ducky’s former graduate assistant who impressed Gibbs with her keen forensic skills during a critical time for the team. Overseeing operations is NCIS Director Leon Vance, an intelligent, highly trained agent who can always be counted on to shake up the status quo. From murder and espionage to terrorism and stolen submarines, these special agents investigate all crimes with Navy or Marine Corps ties.
+        </p>
+        <!-- Table -->
+        <table>
+            <!-- Heading row -->
+            <tr>
+                <th>Actor/Actress</th>
+                <th>Role</th>
+                <th>Rating</th>
+            </tr>
+            <!-- Content rows -->
+            <tr>
+                <td>Mark Harmon</td>
+                <td>Agent Gibbs</td>
+                <td>8/10</td>   
+            </tr>
+            <tr>
+                <td>David McCallum</td>
+                <td>Ducky</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td>Cote de Pablo</td>
+                <td>Ziva</td>
+                <td>9/10</td>
+            </tr>
+          </table>
+    </div>
+    <div id="second">
+        <h2>Why I like NCIS</h2>
+        <!-- List -->
+        <ul> 
+            <!-- Bullets -->
+            <li><p>lots of action</p></li>
+            <li><p>every episode is independent of other episodes</p></li>
+            <li><p>mystery/crime theme in each episode</p></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+#top {
+    border: 1.5px solid black;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top p {
+    margin: 0;
+}
+
+#middle {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1.5px solid black;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/style.css">
+    <title>To Do</title>
+</head>
+<body>
+    <div id="top">
+        Today's weather in 
+        <select id="state-input">
+            <option value="LosAngeles">Los Angeles</option>
+            <option value="NewYork">New York</option>
+            <option value="Miami">Miami</option>
+        </select>
+        <div id="results">
+        </div>
+    </div>
+
+    <div id="middle">
+        <h1>To Do List<span id="plus">➕</span></h1>
+        <input type="text" id="user-input" placeholder="Add to-do item here">
+        <ul id="list">
+            <li><span class="box">☐</span>Study for ITP 303 midterm</li>
+            <li><span class="box">☐</span> Buy USC shirt from bookstore</li>
+            <li><span class="box">☐</span> Go to Nayeon's office hours</li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="main.js"></script>  
+</body>
+</html>

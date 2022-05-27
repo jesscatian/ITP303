@@ -1,0 +1,56 @@
+.navbar {
+    background-color: rgb(210, 184, 131);
+}
+
+.navbar .navbar-brand {
+    font-family: 'Comforter', cursive;
+}
+
+.header {
+    background-image: url("images/main.png");
+    background-size: cover;
+    padding-bottom: 300px;
+    background-position: top;
+    color: white;
+}
+
+.header .row {
+    text-align: center;
+    padding-top:80px;
+    font-family: 'Staatliches', cursive;
+}
+
+.header .row h1 {
+    font-family: 'Comforter', cursive;
+}
+
+.container h3,h4 {
+    font-family: 'Staatliches', cursive;
+}
+
+.feature-row {
+    border-bottom: 1px solid black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#footer {
+    text-align: center;
+}
+
+.feature-team .row-image {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feature-team .row {
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 50px;
+}
+
+.edit-size {
+    width: 300px;
+    height: 300px;
+}
+

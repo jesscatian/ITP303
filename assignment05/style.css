@@ -1,0 +1,50 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    margin-top: 2%;
+}
+
+.col {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.col p{
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.col-container {
+    position: relative;
+    /* will only be as big as the items inside it aka image so no need to adjust width and height */
+}  
+
+.col:hover .col-container .overlay{
+    display: block;
+}
+
+.col .col-container .overlay{
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height:100%;
+    top: 0;
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+}
+
+.col .overlay p {
+    color: white;
+    font-size: 90%;
+    font-weight: bold;
+}

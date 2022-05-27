@@ -1,0 +1,64 @@
+#top {
+    border: 1.5px solid black;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 248, 186);
+}
+
+#top p {
+    margin: 0;
+}
+
+#middle {
+    background-color: white;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1.5px solid black;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+#results {
+    display:inline;
+}
+
+body {
+    background-color: rgb(253, 213, 219);
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
+}
+
+li:hover {
+    background-color: rgb(167, 167, 167);
+}
+
+#plus{
+    margin-left: 200px;
+}
+
+h1 {
+    margin-left: 50px;
+}
+
+.clicked {
+    text-decoration: line-through;
+    font-style: italic;
+    color: gray;
+}
+
+#list {
+    list-style-type:none;
+}
+
+#user-input {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 27px;
+
+    width: 90%;
+    border-radius: 5px;
+}
